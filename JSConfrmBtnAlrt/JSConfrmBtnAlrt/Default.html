@@ -1,0 +1,28 @@
+﻿<html>
+<head>
+    <title></title>
+    <script type="text/javascript">
+
+        function myFunction()
+        {
+
+            var txt;
+            var r = confirm("Are you want to delete this item permanently ?")
+            if (r == true) {
+                txt = "You deleted it !";
+            }
+            else {
+                txt="You pressed Cancel !"
+            }
+            document.getElementById("demo").innerHTML = txt;
+
+        }
+
+    </script>
+</head>
+<body>
+    <p>Click the button to display a confirm box</p>
+    <button onclick="myFunction()"> Try it !</button>
+    <p id="demo"></p>
+</body>
+</html>
